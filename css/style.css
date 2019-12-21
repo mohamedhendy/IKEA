@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: none;
+}
+.btn-settings:before {
+  content: "";
+}
+.btn-settings .fas {
+  padding: 7px;
+}
+/* Start header*/
+header {
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+header .right {
+  width: 71%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+header .btn {
+  color: #fff !important;
+  font-weight: 400;
+  border: none !important;
+  padding: 10px 20px;
+}
+header .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+header .right {
+  width: 71%;
+  float: right;
+}
+.mapimages {
+  height: 100%;
+}
+.mapimages iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  position: relative;
+}
+header .right::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 100%;
+  width: 10000px;
+  height: 100%;
+  background-color: #fff;
+  transform-origin: bottom right;
+  -webkit-transform: skewX(156deg);
+  -moz-transform: skewX(156deg);
+  -ms-transform: skewX(156deg);
+  -o-transform: skewX(156deg);
+  transform: skewX(156deg);
+}
+header .left {
+  width: 38%;
+  padding: 30px 7px;
+  position: relative;
+  z-index: 2;
+}
+header .timer {
+  padding: 20px 0;
+  text-align: center;
+}
+header .timer ul li {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  text-align: center;
+}
+header .timer ul li span {
+  font-size: 14px;
+}
+header .timer ul li .tim {
+  font-size: 25px;
+  display: block;
+}
+header .centercontent {
+  padding: 10px 0;
+  text-align: center;
+}
+header .footerh {
+  text-align: center;
+  padding: 40px 0;
+}
+header .footerh ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.footerh ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.footerh ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.footerh ul li a i {
+  transition: all 0.1s ease;
+}
+.footerh ul li a i:hover {
+  font-size: 22px;
+}
+nav {
+  padding: 10px;
+  background-color: #fff !important;
+  text-align: center;
+}
+nav i {
+  color: rgb(27, 26, 26);
+  font-weight: bold;
+}
+nav i:hover {
+  color: rgb(80, 73, 73);
+  cursor: pointer;
+}
+/* Section ------------------------------------------------------*/
+section {
+  display: none;
+}
+section img {
+  width: 100%;
+}
+section h5 {
+  font-size: 1rem;
+}
+section p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+section .min {
+  height: 100px;
+}
+section img {
+  height: 100%;
+}
+section span {
+  display: block;
+}
+section .fcontm {
+  height: 224px !important;
+}
+section .max {
+  height: 145px;
+}
+section .testemonial {
+  margin: 20px 0 0;
+  font-size: 1.1rem;
+}
+
+/* Media */
+@media (max-width: 768px) {
+  .mapimages {
+    height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  header .right {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header .right::after {
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 10000px;
+    transform-origin: top right;
+    -webkit-transform: skew(0, 0);
+    -moz-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    -o-transform: skew(0, 0);
+    transform: skew(0, 0);
+  }
+  header .left {
+    width: 100% !important;
+  }
+  section {
+    padding: 20px 0;
+  }
+  section .min {
+    margin: 10px 0;
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  header .footerh {
+    padding: 40px 0 0;
+  }
+  header .left {
+    padding: 30px 7px 0;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+}
